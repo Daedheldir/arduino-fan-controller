@@ -1,4 +1,5 @@
-#include "ManagingInterface.h"
+# 1 "d:\\Work\\CNC\\Projects\\Laptop Stand\\Programs\\Sketch\\ArduinoFanController\\Sketch\\Sketch.ino"
+# 2 "d:\\Work\\CNC\\Projects\\Laptop Stand\\Programs\\Sketch\\ArduinoFanController\\Sketch\\Sketch.ino" 2
 
 dh::ManagingInterface interface;
 
@@ -8,8 +9,8 @@ void setup()
 
   interface.setupManager();
   // put your setup code here, to run once:
-  pinMode(2, INPUT_PULLUP);
-  attachInterrupt(digitalPinToInterrupt(2), fan1_rpm, RISING);
+  pinMode(2, 0x2);
+  attachInterrupt(((2) == 2 ? 0 : ((2) == 3 ? 1 : -1)), fan1_rpm, 3);
 }
 
 void loop()

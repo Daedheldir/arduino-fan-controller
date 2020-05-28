@@ -1,0 +1,24 @@
+d:\Work\CNC\Projects\Laptop\ Stand\Programs\Sketch\ArduinoFanController\build\sketch\src\ManagingInterface.cpp.o: \
+ d:\Work\CNC\Projects\Laptop\ Stand\Programs\Sketch\ArduinoFanController\build\sketch\src\ManagingInterface.cpp \
+ d:\work\cnc\projects\laptop\ stand\programs\sketch\arduinofancontroller\build\sketch\include\managinginterface.h \
+ D:\Programming\arduino-1.8.12\hardware\arduino\avr\cores\arduino/Arduino.h \
+ D:\Programming\arduino-1.8.12\hardware\arduino\avr\cores\arduino/binary.h \
+ D:\Programming\arduino-1.8.12\hardware\arduino\avr\cores\arduino/WCharacter.h \
+ D:\Programming\arduino-1.8.12\hardware\arduino\avr\cores\arduino/WString.h \
+ D:\Programming\arduino-1.8.12\hardware\arduino\avr\cores\arduino/HardwareSerial.h \
+ D:\Programming\arduino-1.8.12\hardware\arduino\avr\cores\arduino/Stream.h \
+ D:\Programming\arduino-1.8.12\hardware\arduino\avr\cores\arduino/Print.h \
+ D:\Programming\arduino-1.8.12\hardware\arduino\avr\cores\arduino/Printable.h \
+ D:\Programming\arduino-1.8.12\hardware\arduino\avr\cores\arduino/USBAPI.h \
+ D:\Programming\arduino-1.8.12\hardware\arduino\avr\cores\arduino/Arduino.h \
+ D:\Programming\arduino-1.8.12\hardware\arduino\avr\variants\eightanaloginputs/pins_arduino.h \
+ d:\programming\arduino-1.8.12\hardware\arduino\avr\variants\standard\pins_arduino.h \
+ d:\work\cnc\projects\laptop\ stand\programs\sketch\arduinofancontroller\build\sketch\include\FanController.h \
+ d:\work\cnc\projects\laptop\ stand\programs\sketch\arduinofancontroller\build\sketch\include\RPMCounter.h \
+ d:\work\cnc\projects\laptop\ stand\programs\sketch\arduinofancontroller\build\sketch\include\TimerMillis.h \
+ d:\work\cnc\projects\laptop\ stand\programs\sketch\arduinofancontroller\build\sketch\include\LCDController.h \
+ C:\Users\Daedheldir\Documents\Arduino\libraries\NewLiquidCrystal_lib/LiquidCrystal_I2C.h \
+ D:\Programming\arduino-1.8.12\hardware\arduino\avr\cores\arduino/Print.h \
+ C:\Users\Daedheldir\Documents\Arduino\libraries\NewLiquidCrystal_lib/I2CIO.h \
+ C:\Users\Daedheldir\Documents\Arduino\libraries\NewLiquidCrystal_lib/LCD.h \
+ d:\work\cnc\projects\laptop\ stand\programs\sketch\arduinofancontroller\build\sketch\include\SerialController.h
