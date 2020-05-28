@@ -24,7 +24,7 @@ namespace dh
     return this->delay_ms;
   }
 
-  bool TimerMillis::updateTimer()
+  bool TimerMillis::update()
   {
     current_time = millis();
     timeAccumulator += (current_time - previous_time);

@@ -28,7 +28,8 @@ namespace dh
     //pwmSignal = 1;
     int speed = static_cast<int>(round(255 * pwmSignal));
     analogWrite(pinPwm, speed);
-    rpmCounter.updateCounter();
+
+    rpmCounter.update();
   }
 
   int FanController::getRpm()

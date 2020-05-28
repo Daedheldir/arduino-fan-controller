@@ -11,25 +11,10 @@ namespace dh
     public:
         LCDController();
         bool init();
-        // static void print(int posX, int posY, char message[])
-        // {
-        //     lcd.setCursor(posX, posY);
-        //     lcd.print(message);
-        // }
-        // static void print(int posX, int posY, char message)
-        // {
-        //     lcd.setCursor(posX, posY);
-        //     lcd.print(message);
-        // }
-        // static void print(int posX, int posY, int message)
-        // {
-        //     lcd.setCursor(posX, posY);
-        //     lcd.print(message);
-        // }
-        // static void clear()
-        // {
-        //     lcd.clear();
-        // }
+        void print(int posX, int posY, char message[]);
+        void print(int posX, int posY, char message);
+        void print(int posX, int posY, int message);
+        void clear();
         bool update(int cpuTemp, int cpuRpm, int gpuTemp, int gpuRpm);
 
     private:

@@ -12,7 +12,7 @@ namespace dh
 
     unsigned int getInterval();
 
-    bool updateTimer();
+    bool update();
     int getTimeAcc();
 
   private:

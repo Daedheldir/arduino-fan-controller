@@ -2,7 +2,7 @@
 
 namespace dh
 {
-  ManagingInterface::ManagingInterface() : fan1_controller(2, 9), fan2_controller(3, 10)
+  ManagingInterface::ManagingInterface() : serialController(&lcdController), fan1_controller(2, 9), fan2_controller(3, 10)
   {
   }
 

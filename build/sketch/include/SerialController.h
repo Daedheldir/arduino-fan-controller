@@ -1,12 +1,12 @@
 #pragma once
 #include <Arduino.h>
-
+#include "LCDController.h"
 namespace dh
 {
     class SerialController
     {
     public:
-        SerialController();
+        SerialController(LCDController *lcd);
 
         void init();
         void update();
@@ -14,8 +14,11 @@ namespace dh
         int getGpuTemp();
 
         void recieveWithDelimit();
+        void processRecievedData();
 
     private:
+        LCDController *lcdController;
+
         int cpuTemp = 0;
         int gpuTemp = 0;
         static const int tempArrSize = 1;
@@ -26,7 +29,7 @@ namespace dh
         int gpuTempArr[tempArrSize];
         int gpuTempArrIter = 0;
 
-        bool newData = false;
+        bool newDataRecieved = false;
         static const int bufferSize = 2;
         char buffer[bufferSize];
     };

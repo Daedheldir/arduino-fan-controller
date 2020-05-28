@@ -18,7 +18,7 @@ namespace dh
 
     int getRpm();
 
-    bool updateCounter();
+    bool update();
 
   private:
     int pinInterrupt;

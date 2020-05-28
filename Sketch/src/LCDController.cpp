@@ -10,28 +10,28 @@ namespace dh
         lcd.begin(16, 2);
         lcd.backlight();
     }
-    // static void LCDController::print(int posX, int posY, char message[])
-    // {
-    //     lcd.setCursor(posX, posY);
-    //     lcd.print(message);
-    // }
-    // static void LCDController::print(int posX, int posY, char message)
-    // {
-    //     lcd.setCursor(posX, posY);
-    //     lcd.print(message);
-    // }
-    // static void LCDController::print(int posX, int posY, int message)
-    // {
-    //     lcd.setCursor(posX, posY);
-    //     lcd.print(message);
-    // }
-    // static void LCDController::clear()
-    // {
-    //     lcd.clear();
-    // }
+    void LCDController::print(int posX, int posY, char message[])
+    {
+        lcd.setCursor(posX, posY);
+        lcd.print(message);
+    }
+    void LCDController::print(int posX, int posY, char message)
+    {
+        lcd.setCursor(posX, posY);
+        lcd.print(message);
+    }
+    void LCDController::print(int posX, int posY, int message)
+    {
+        lcd.setCursor(posX, posY);
+        lcd.print(message);
+    }
+    void LCDController::clear()
+    {
+        lcd.clear();
+    }
     bool LCDController::update(int cpuTemp, int cpuRpm, int gpuTemp, int gpuRpm)
     {
-        timer.updateTimer();
+        timer.update();
 
         if (timer.isReady())
         {

@@ -12,4 +12,10 @@ d:\Work\CNC\Projects\Laptop\ Stand\Programs\Sketch\ArduinoFanController\build\sk
  D:\Programming\arduino-1.8.12\hardware\arduino\avr\cores\arduino/USBAPI.h \
  D:\Programming\arduino-1.8.12\hardware\arduino\avr\cores\arduino/Arduino.h \
  D:\Programming\arduino-1.8.12\hardware\arduino\avr\variants\eightanaloginputs/pins_arduino.h \
- d:\programming\arduino-1.8.12\hardware\arduino\avr\variants\standard\pins_arduino.h
+ d:\programming\arduino-1.8.12\hardware\arduino\avr\variants\standard\pins_arduino.h \
+ d:\work\cnc\projects\laptop\ stand\programs\sketch\arduinofancontroller\build\sketch\include\LCDController.h \
+ C:\Users\Daedheldir\Documents\Arduino\libraries\NewLiquidCrystal_lib/LiquidCrystal_I2C.h \
+ D:\Programming\arduino-1.8.12\hardware\arduino\avr\cores\arduino/Print.h \
+ C:\Users\Daedheldir\Documents\Arduino\libraries\NewLiquidCrystal_lib/I2CIO.h \
+ C:\Users\Daedheldir\Documents\Arduino\libraries\NewLiquidCrystal_lib/LCD.h \
+ d:\work\cnc\projects\laptop\ stand\programs\sketch\arduinofancontroller\build\sketch\include\TimerMillis.h

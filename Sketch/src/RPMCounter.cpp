@@ -27,9 +27,9 @@ namespace dh
     return current_rpm;
   }
 
-  bool RPMCounter::updateCounter()
+  bool RPMCounter::update()
   {
-    timer.updateTimer();
+    timer.update();
     if (timer.isReady())
     {
       noInterrupts();
