@@ -13,7 +13,7 @@ namespace dh
     {
       pinMode(pinPwm, OUTPUT);
     }
-    void updateController(int temp)
+    void update(int temp)
     {
       if (temp < minTemp)
       {

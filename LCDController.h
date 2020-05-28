@@ -34,7 +34,7 @@ namespace dh
         // {
         //     lcd.clear();
         // }
-        bool updateText(int cpuTemp, int cpuRpm, int gpuTemp, int gpuRpm)
+        bool update(int cpuTemp, int cpuRpm, int gpuTemp, int gpuRpm)
         {
             timer.updateTimer();
 

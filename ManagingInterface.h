@@ -29,16 +29,12 @@ namespace dh
       serialController.update();
       int cpuTemp = serialController.getCpuTemp();
       int gpuTemp = serialController.getGpuTemp();
-      //LCDController::print(12, 0, "s");
 
-      fan1_controller.updateController(cpuTemp);
-      //LCDController::print(13, 0, "1");
+      fan1_controller.update(cpuTemp);
 
-      fan2_controller.updateController(gpuTemp);
-      //LCDController::print(14, 0, "2");
+      fan2_controller.update(gpuTemp);
 
-      lcdController.updateText(cpuTemp, fan1_controller.getRpm(), gpuTemp, fan2_controller.getRpm());
-      //LCDController::print(15, 0, "l");
+      lcdController.update(cpuTemp, fan1_controller.getRpm(), gpuTemp, fan2_controller.getRpm());
     }
 
     FanController *getFan1Controller()
