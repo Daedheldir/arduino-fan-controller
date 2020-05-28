@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceRoot}",
+                "D:\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.25.28610\\include\\*",
+                "D:\\Programming\\arduino-1.8.12\\tools\\**",
+                "D:\\Programming\\arduino-1.8.12\\hardware\\arduino\\avr\\**",
+                "C:\\Users\\Daedheldir\\Documents\\Arduino\\libraries"
+            ],
+            "forcedInclude": [
+                "D:\\Programming\\arduino-1.8.12\\hardware\\arduino\\avr\\cores\\arduino\\Arduino.h"
+            ],
+            "intelliSenseMode": "msvc-x64",
+            "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/bin/Hostx64/x64/cl.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
