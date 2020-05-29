@@ -4,6 +4,7 @@
 #include "FanController.h"
 #include "LCDController.h"
 #include "SerialController.h"
+#include "TemperatureController.h"
 
 namespace dh
 {
@@ -24,9 +25,12 @@ namespace dh
     void fan2_interrupt();
 
   private:
+    uint8_t cpuTemp = 0;
+    uint8_t gpuTemp = 0;
     FanController fan1_controller;
     FanController fan2_controller;
     LCDController lcdController;
     SerialController serialController;
+    TemperatureController tempController;
   };
 } // namespace dh

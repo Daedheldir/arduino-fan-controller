@@ -6,31 +6,26 @@ namespace dh
     class SerialController
     {
     public:
-        SerialController(LCDController *lcd);
+        SerialController();
 
         void init();
         void update();
-        int getCpuTemp();
-        int getGpuTemp();
+        uint8_t getCpuTemp();
+        uint8_t getGpuTemp();
+
+        bool isNewDataRecieved();
+        void isNewDataRecieved(bool state);
 
         void recieveWithDelimit();
         void processRecievedData();
 
     private:
-        LCDController *lcdController;
-
-        int cpuTemp = 0;
-        int gpuTemp = 0;
-        static const int tempArrSize = 1;
-
-        int cpuTempArr[tempArrSize];
-        int cpuTempArrIter = 0;
-
-        int gpuTempArr[tempArrSize];
-        int gpuTempArrIter = 0;
+        uint8_t cpuTemp = 0;
+        uint8_t gpuTemp = 0;
 
         bool newDataRecieved = false;
-        static const int bufferSize = 2;
+
+        static const uint8_t bufferSize = 2;
         char buffer[bufferSize];
     };
 } // namespace dh

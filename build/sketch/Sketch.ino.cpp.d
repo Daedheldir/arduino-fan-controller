@@ -21,4 +21,5 @@ d:\Work\CNC\Projects\Laptop\ Stand\Programs\Sketch\ArduinoFanController\build\sk
  D:\Programming\arduino-1.8.12\hardware\arduino\avr\cores\arduino/Print.h \
  C:\Users\Daedheldir\Documents\Arduino\libraries\NewLiquidCrystal_lib/I2CIO.h \
  C:\Users\Daedheldir\Documents\Arduino\libraries\NewLiquidCrystal_lib/LCD.h \
- d:\Work\CNC\Projects\Laptop\ Stand\Programs\Sketch\ArduinoFanController\build\sketch\include/SerialController.h
+ d:\Work\CNC\Projects\Laptop\ Stand\Programs\Sketch\ArduinoFanController\build\sketch\include/SerialController.h \
+ d:\Work\CNC\Projects\Laptop\ Stand\Programs\Sketch\ArduinoFanController\build\sketch\include/TemperatureController.h

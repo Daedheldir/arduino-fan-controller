@@ -2,7 +2,7 @@
 
 namespace dh
 {
-    SerialController::SerialController(LCDController *lcd) : lcdController(lcd)
+    SerialController::SerialController()
     {
     }
 
@@ -18,41 +18,32 @@ namespace dh
         }
     }
 
-    int SerialController::getCpuTemp()
+    uint8_t SerialController::getCpuTemp()
     {
-        if (tempArrSize <= 1)
-            return cpuTemp;
-
-        int tempAverage = 0;
-
-        for (int i = 0; i < tempArrSize; ++i)
-            tempAverage += cpuTempArr[i];
-
-        tempAverage /= tempArrSize;
-        return tempAverage;
+        return cpuTemp;
     }
-    int SerialController::getGpuTemp()
+    uint8_t SerialController::getGpuTemp()
     {
-        if (tempArrSize <= 1)
-            return gpuTemp;
+        return gpuTemp;
+    }
 
-        int tempAverage = 0;
-
-        for (int i = 0; i < tempArrSize; ++i)
-            tempAverage += gpuTempArr[i];
-
-        tempAverage /= tempArrSize;
-        return tempAverage;
+    bool SerialController::isNewDataRecieved()
+    {
+        return newDataRecieved;
+    }
+    void SerialController::isNewDataRecieved(bool state)
+    {
+        newDataRecieved = state;
     }
 
     void SerialController::recieveWithDelimit()
     {
-        bool recvInProgress = false;
+        //bool recvInProgress = false;
+        //int bufferIter = 0;
+        char recData;
 
         char startChar = '<';
         char endChar = '>';
-        int bufferIter = 0;
-        char recData;
 
         while (Serial.available() > 0 && newDataRecieved == false)
         {
@@ -103,6 +94,7 @@ namespace dh
     }
     void SerialController::processRecievedData()
     {
+        //handshake
         if (buffer[0] == 'H' && buffer[1] == 'S')
         {
             Serial.write("<AC>");
@@ -110,25 +102,7 @@ namespace dh
         else
         {
             cpuTemp = buffer[0];
-
-            cpuTempArr[cpuTempArrIter++] = cpuTemp;
-            if (cpuTempArrIter >= tempArrSize)
-            {
-                cpuTempArrIter = 0;
-            }
-            //LCDController::print(14, 0, 'c');
-            //LCDController::print(15, 0, cpuTemp);
-
             gpuTemp = buffer[1];
-
-            gpuTempArr[gpuTempArrIter++] = gpuTemp;
-            if (gpuTempArrIter >= tempArrSize)
-            {
-                gpuTempArrIter = 0;
-            }
-            //LCDController::print(14, 1, 'g');
-            //LCDController::print(15, 1, gpuTemp);
         }
-        newDataRecieved = false;
     }
 } // namespace dh

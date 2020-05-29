@@ -32,10 +32,10 @@ namespace dh
     timer.update();
     if (timer.isReady())
     {
-      noInterrupts();
+      //noInterrupts();
       current_rpm = 10 * (interruptAccumulator * 60) / fanDivider;
       interruptAccumulator = 0;
-      interrupts();
+      //interrupts();
       return true;
     }
     return false;

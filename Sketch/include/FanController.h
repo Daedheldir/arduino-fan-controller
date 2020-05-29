@@ -9,7 +9,7 @@ namespace dh
   public:
     FanController(int pinInterrupt, int pinPwm);
     void init();
-    void update(int temp);
+    void update(uint8_t temp);
 
     int getRpm();
 
@@ -22,7 +22,7 @@ namespace dh
     float pwmSignal = 0.0f;
     RPMCounter rpmCounter;
 
-    int minTemp = 40;
-    int midTemp = 80;
+    uint8_t minTemp = 40;
+    uint8_t midTemp = 80;
   }; // namespace dh
 } // namespace dh

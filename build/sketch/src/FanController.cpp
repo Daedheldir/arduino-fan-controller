@@ -10,7 +10,7 @@ namespace dh
   {
     pinMode(pinPwm, OUTPUT);
   }
-  void FanController::update(int temp)
+  void FanController::update(uint8_t temp)
   {
     if (temp < minTemp)
     {
