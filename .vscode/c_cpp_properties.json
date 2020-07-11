@@ -4,7 +4,7 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceRoot}",
-                "D:\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.25.28610\\include\\*",
+                "D:\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.26.28801\\include\\*",
                 "D:\\Programming\\arduino-1.8.12\\tools\\**",
                 "D:\\Programming\\arduino-1.8.12\\hardware\\arduino\\avr\\**",
                 "C:\\Users\\Daedheldir\\Documents\\Arduino\\libraries",

@@ -14,7 +14,7 @@ namespace dh
         uint8_t getGpuTemp();
 
     private:
-        static uint8_t const arrSize = 2;
+        static uint8_t const arrSize = 3;
 
         uint8_t cpuTempArr[arrSize];
         uint8_t cpuTempArrIter = 0;

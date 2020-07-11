@@ -2,7 +2,7 @@
 
 namespace dh
 {
-    SerialController::SerialController()
+    SerialController::SerialController(LCDController *lcdController) : lcdController(lcdController)
     {
     }
 
@@ -38,8 +38,6 @@ namespace dh
 
     void SerialController::recieveWithDelimit()
     {
-        //bool recvInProgress = false;
-        //int bufferIter = 0;
         char recData;
 
         char startChar = '<';
@@ -48,50 +46,19 @@ namespace dh
         while (Serial.available() > 0 && newDataRecieved == false)
         {
             recData = Serial.read();
-            //delay(250);
 
             if (recData == startChar)
             {
                 Serial.readBytesUntil(endChar, buffer, 3);
                 newDataRecieved = true;
             }
-
-            /*old bugged recieving method DO NOT TOUCH
-
-            if started recieving
-            if (recvInProgress)
-            {
-                //if recData isn't the endChar
-                if (recData != endChar)
-                {
-                    //set buffer at iter to rec data and increase iter
-                    //LCDController::print(14, 0, bufferIter);
-                    buffer[bufferIter] = recData;
-                    bufferIter++;
-                    //if iter is about to overflow go back to max iter size
-                    if (bufferIter >= bufferSize)
-                        bufferIter = bufferSize - 1;
-                }
-                //else if recData is the endChar
-                else
-                {
-                    recvInProgress = false;
-                    newDataRecieved = true;
-                }
-            }
-            //if we arent recieving and the recData is the startChar
-            else if (recData == startChar)
-            {
-                //set recieving to true and bufferIter to start of the buffer
-                recvInProgress = true;
-                newDataRecieved = false;
-                bufferIter = 0;
-            }
-            delay(250);
-            */
         }
-        //Serial.write(recData);
+        // if (newDataRecieved)
+        // {
+        //     lcdController->print(0, 0, buffer);
+        // }
     }
+
     void SerialController::processRecievedData()
     {
         //handshake

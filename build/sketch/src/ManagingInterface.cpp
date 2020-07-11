@@ -2,7 +2,7 @@
 
 namespace dh
 {
-  ManagingInterface::ManagingInterface() : fan1_controller(2, 9), fan2_controller(3, 10)
+  ManagingInterface::ManagingInterface() : serialController(&lcdController), fan1_controller(2, 9), fan2_controller(3, 10)
   {
   }
 
@@ -27,9 +27,9 @@ namespace dh
     if (serialController.isNewDataRecieved())
     {
       //update the temperature controller
-      tempController.update(serialController.getCpuTemp(), serialController.getGpuTemp());
-      cpuTemp = tempController.getCpuTemp();
-      gpuTemp = tempController.getGpuTemp();
+      cpuTemp = serialController.getCpuTemp();
+      gpuTemp = serialController.getGpuTemp();
+      tempController.update(cpuTemp, gpuTemp);
 
       //tell the controller that you're ready to receive new data
       serialController.isNewDataRecieved(false);

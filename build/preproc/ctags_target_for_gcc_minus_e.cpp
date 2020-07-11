@@ -11,6 +11,8 @@ void setup()
   // put your setup code here, to run once:
   pinMode(2, 0x2);
   attachInterrupt(((2) == 2 ? 0 : ((2) == 3 ? 1 : -1)), fan1_rpm, 3);
+  pinMode(3, 0x2);
+  attachInterrupt(((3) == 2 ? 0 : ((3) == 3 ? 1 : -1)), fan2_rpm, 3);
 }
 
 void loop()

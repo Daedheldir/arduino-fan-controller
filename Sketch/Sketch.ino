@@ -10,6 +10,8 @@ void setup()
   // put your setup code here, to run once:
   pinMode(2, INPUT_PULLUP);
   attachInterrupt(digitalPinToInterrupt(2), fan1_rpm, RISING);
+  pinMode(3, INPUT_PULLUP);
+  attachInterrupt(digitalPinToInterrupt(3), fan2_rpm, RISING);
 }
 
 void loop()

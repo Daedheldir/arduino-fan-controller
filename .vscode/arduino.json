@@ -2,7 +2,7 @@
     "board": "arduino:avr:nano",
     "configuration": "cpu=atmega328old",
     "sketch": "Sketch\\Sketch.ino",
-    "port": "COM7",
+    "port": "COM4",
     "programmer": "AVRISP mkII",
     "output": "build"
 }

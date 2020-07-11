@@ -6,7 +6,7 @@ namespace dh
     class SerialController
     {
     public:
-        SerialController();
+        SerialController(LCDController *lcdController);
 
         void init();
         void update();
@@ -27,5 +27,7 @@ namespace dh
 
         static const uint8_t bufferSize = 2;
         char buffer[bufferSize];
+
+        LCDController *lcdController;
     };
 } // namespace dh
