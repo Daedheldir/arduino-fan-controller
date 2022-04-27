@@ -6,3 +6,4 @@ PC fan controller using Arduino Nano for displaying and controlling RPM based on
 ![3D_2022-Apr-26_11-35-17PM-000_CustomizedView20343214702](https://user-images.githubusercontent.com/44434382/165410297-0f50c92f-d31a-485c-be0f-a762259648ad.png)
 ![Assembly_2022-Apr-26_11-33-20PM-000_CustomizedView20413676878](https://user-images.githubusercontent.com/44434382/165410302-b2bdc426-9825-42cc-bb1e-326ed906f9c6.png)
 ![Assembly_2022-Apr-26_11-25-09PM-000_CustomizedView3466876450](https://user-images.githubusercontent.com/44434382/165410300-3e704a63-c0b8-4c5d-a23c-03555401ad7e.png)
+[Fan Controller PCB Schematic WIP.pdf](https://github.com/Daedheldir/arduino-fan-controller/files/8567772/Fan.Controller.PCB.Schematic.WIP.pdf)
